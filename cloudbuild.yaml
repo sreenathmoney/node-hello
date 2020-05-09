@@ -13,13 +13,13 @@
 steps:
 - name: node
   entrypoint: npm
-  args: ['install']
-- name: node
-  entrypoint: npm
-  args: ['test']
-- name: node
-  entrypoint: npm
-  args: ['run', 'done']
+  args: ['install', 'test', 'run', 'build']
+#- name: node
+#  entrypoint: npm
+#  args: ['test']
+#- name: node
+#  entrypoint: npm
+#  args: ['run', 'build']
 
 #steps:
 #- name: 'gcr.io/cloud-builders/npm'

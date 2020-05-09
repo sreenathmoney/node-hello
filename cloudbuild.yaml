@@ -1,22 +1,22 @@
-#steps:
-#- name: node
-#  entrypoint: npm
-#  args: ['install']
-#- name: node
-#  entrypoint: npm
-#  args: ['test']
+steps:
+- name: node
+  entrypoint: npm
+  args: ['install']
+- name: node
+  entrypoint: npm
+  args: ['test']
 #- name: node
 #  entrypoint: npm
 #  args: ['run', 'build']
 
-steps:
-- name: 'gcr.io/cloud-builders/npm'
-  args: ['run', 'job1']
-  id: 'job1'
-- name: 'gcr.io/cloud-builders/npm'
-  args: ['run', 'job2']
-  id: 'job2'
-  waitFor: ['-']  # The '-' indicates that this step begins immediately.
-- name: 'gcr.io/cloud-builders/npm'
-  args: ['run', 'done']
-  waitFor: ['job1', 'job2']
+#steps:
+#- name: 'gcr.io/cloud-builders/npm'
+#  args: ['run', 'job1']
+#  id: 'job1'
+#- name: 'gcr.io/cloud-builders/npm'
+#  args: ['run', 'job2']
+#  id: 'job2'
+#  waitFor: ['-']  # The '-' indicates that this step begins immediately.
+#- name: 'gcr.io/cloud-builders/npm'
+#  args: ['run', 'done']
+#  waitFor: ['job1', 'job2']

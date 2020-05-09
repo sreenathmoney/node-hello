@@ -17,9 +17,9 @@ steps:
 - name: node
   entrypoint: npm
   args: ['test']
-#- name: node
-#  entrypoint: npm
-#  args: ['run', 'build', '--prod']
+- name: node
+  entrypoint: npm
+  args: ['run', 'done']
 
 #steps:
 #- name: 'gcr.io/cloud-builders/npm'

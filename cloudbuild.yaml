@@ -1,22 +1,22 @@
-steps:
+#steps:
 
 # Install node packages
-- name: node:10.16.3
-  entrypoint: npm
-  args: ['install']
-
-# Build productive files
-- name: node:10.16.3
-  entrypoint: npm
-  args: [ 'run', 'build']
-
-#steps:
-#- name: node
+#- name: node:10.16.3
 #  entrypoint: npm
 #  args: ['install']
-#- name: node
+
+# Build productive files
+#- name: node:10.16.3
 #  entrypoint: npm
-#  args: ['test']
+#  args: [ 'run', 'build']
+
+steps:
+- name: node
+  entrypoint: npm
+  args: ['install']
+- name: node
+  entrypoint: npm
+  args: ['test']
 #- name: node
 #  entrypoint: npm
 #  args: ['run', 'build', '--prod']

@@ -14,10 +14,10 @@ steps:
 - name: node
   entrypoint: npm
   args: ['install', 'test', 'run', 'build', 'pack']
-artifacts:
-  objects:
-    location: 'gs://war123/cicd-276708'
-    paths: ['node-hello-1.0.0.*']
+#artifacts:
+#  objects:
+#    location: 'gs://war123/cicd-276708'
+#    paths: ['node-hello-1.0.0']
     
 #- name: node
 #  entrypoint: npm

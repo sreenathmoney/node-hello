@@ -13,7 +13,12 @@
 steps:
 - name: node
   entrypoint: npm
-  args: ['install', 'test', 'run', 'build']
+  args: ['install', 'test', 'run', 'build', 'pack']
+artifacts:
+  objects:
+    location: gs://[war123]/[test]
+    paths: ['helloworld.class']
+    
 #- name: node
 #  entrypoint: npm
 #  args: ['test']

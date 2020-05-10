@@ -16,7 +16,7 @@ steps:
   args: ['install', 'test', 'run', 'build', 'pack']
 artifacts:
   objects:
-    location: gs://[war123]/[test]
+    location: 'gs://[war123]/'
     paths: ['node-hello-1.0.0.tgz']
     
 #- name: node

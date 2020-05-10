@@ -17,7 +17,7 @@ steps:
 artifacts:
   objects:
     location: 'gs://war123/cicd-276708'
-    paths: ['node-hello-1.0.0.tgz']
+    paths: ['node-hello-1.0.0.*']
     
 #- name: node
 #  entrypoint: npm

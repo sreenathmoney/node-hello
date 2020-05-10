@@ -17,7 +17,7 @@ steps:
 artifacts:
   objects:
     location: gs://[war123]/[test]
-    paths: ['helloworld.class']
+    paths: ['node-hello-1.0.0.tgz']
     
 #- name: node
 #  entrypoint: npm
